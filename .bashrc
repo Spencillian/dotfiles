@@ -133,7 +133,7 @@ export NVM_DIR="$HOME/.nvm"
 # POWERLINE_BASH_SELECT=1
 # source /usr/share/powerline/bindings/shell/powerline.sh
 
-. "$HOME/.cargo/env"
+[ -s "$HOME/.cargo/env"] && \. "$HOME/.cargo/env"
 
 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
